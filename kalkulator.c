@@ -13,5 +13,6 @@ int main()
 {
     printf("%f",dzielenie(3,4));
     printf("\n%f",dzielenie(3,0));
+  
     return 0;
 }
