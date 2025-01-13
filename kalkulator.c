@@ -1,9 +1,10 @@
 #include <stdio.h>
+
+double kwadrat(double liczba)
+{
+    return liczba * liczba;
+}
 int main()
 {
-    double kwadrat(double liczba)
-    {
-        return liczba * liczba;
-    }
     return 0;
 }
