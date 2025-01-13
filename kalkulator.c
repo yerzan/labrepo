@@ -21,9 +21,15 @@ double bezwzgledna(double a)
     }
 }
 
+double odejmowanie(double a, double b)
+{
+    return a - b;
+}
+
 int main()
 {
-    printf("%f",bezwzgledna(5));
+    printf("%f",odejmowanie(4,2));
+    printf("\n%f",bezwzgledna(5));
     printf("\n%f",bezwzgledna(5));
     printf("\n%f",dzielenie(3,4));
     printf("\n%f",dzielenie(3,0));
