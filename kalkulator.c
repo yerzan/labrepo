@@ -9,9 +9,23 @@ double dzielenie(double a, double b)
     else exit(0);
 }
 
+double bezwzgledna(double a)
+{
+    if(a >= 0)
+    {
+        return a;
+    }
+    else if(a < 0)
+    {
+        return -a;
+    }
+}
+
 int main()
 {
-    printf("%f",dzielenie(3,4));
+    printf("%f",bezwzgledna(5));
+    printf("\n%f",bezwzgledna(5));
+    printf("\n%f",dzielenie(3,4));
     printf("\n%f",dzielenie(3,0));
   
     return 0;
