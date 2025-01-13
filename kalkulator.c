@@ -27,5 +27,6 @@ int main()
     printf("\n%f",bezwzgledna(5));
     printf("\n%f",dzielenie(3,4));
     printf("\n%f",dzielenie(3,0));
+  
     return 0;
 }
