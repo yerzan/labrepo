@@ -1,4 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+double kwadrat(double liczba)
+{
+    return liczba * liczba;
+}
 
 double dzielenie(double a, double b)
 {
@@ -6,16 +12,20 @@ double dzielenie(double a, double b)
     {
         return a / b;
     }
-    else exit(0);
+    else
+    {
+        printf("Blad: dzielenie przez zero!\n");
+        exit(1); 
+    }
 }
 
 double bezwzgledna(double a)
 {
-    if(a >= 0)
+    if (a >= 0)
     {
         return a;
     }
-    else if(a < 0)
+    else
     {
         return -a;
     }
@@ -23,10 +33,9 @@ double bezwzgledna(double a)
 
 int main()
 {
-    printf("%f",bezwzgledna(5));
-    printf("\n%f",bezwzgledna(5));
-    printf("\n%f",dzielenie(3,4));
-    printf("\n%f",dzielenie(3,0));
-  
+    printf("Wynik bezwzgledna(5): %f\n", bezwzgledna(5));
+    printf("Wynik bezwzgledna(-5): %f\n", bezwzgledna(-5));
+    printf("Wynik dzielenie(3, 4): %f\n", dzielenie(3, 4));
+
     return 0;
 }
